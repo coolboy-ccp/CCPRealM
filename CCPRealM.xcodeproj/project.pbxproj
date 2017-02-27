@@ -13,6 +13,8 @@
 		7ECEDE281E5FCDDF006003EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECEDE261E5FCDDF006003EC /* Main.storyboard */; };
 		7ECEDE2A1E5FCDDF006003EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ECEDE291E5FCDDF006003EC /* Assets.xcassets */; };
 		7ECEDE2D1E5FCDDF006003EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECEDE2B1E5FCDDF006003EC /* LaunchScreen.storyboard */; };
+		7EEBD6861E63BE680057BE4D /* CCPRealm.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EEBD6851E63BE680057BE4D /* CCPRealm.m */; };
+		7EEBD6891E63C2520057BE4D /* CCPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EEBD6881E63C2520057BE4D /* CCPUser.m */; };
 		E11437030B38402818C60BCE /* Pods_CCPRealM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BABF62B8E6FA875B294E7A5 /* Pods_CCPRealM.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,10 @@
 		7ECEDE291E5FCDDF006003EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7ECEDE2C1E5FCDDF006003EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7ECEDE2E1E5FCDDF006003EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EEBD6841E63BE680057BE4D /* CCPRealm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPRealm.h; sourceTree = "<group>"; };
+		7EEBD6851E63BE680057BE4D /* CCPRealm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPRealm.m; sourceTree = "<group>"; };
+		7EEBD6871E63C2520057BE4D /* CCPUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPUser.h; sourceTree = "<group>"; };
+		7EEBD6881E63C2520057BE4D /* CCPUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPUser.m; sourceTree = "<group>"; };
 		7FCC3D7BE8CDD35A011F952C /* Pods-CCPRealM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCPRealM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCPRealM/Pods-CCPRealM.debug.xcconfig"; sourceTree = "<group>"; };
 		9BABF62B8E6FA875B294E7A5 /* Pods_CCPRealM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCPRealM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -78,6 +84,10 @@
 				7ECEDE211E5FCDDF006003EC /* AppDelegate.m */,
 				7ECEDE231E5FCDDF006003EC /* ViewController.h */,
 				7ECEDE241E5FCDDF006003EC /* ViewController.m */,
+				7EEBD6841E63BE680057BE4D /* CCPRealm.h */,
+				7EEBD6851E63BE680057BE4D /* CCPRealm.m */,
+				7EEBD6871E63C2520057BE4D /* CCPUser.h */,
+				7EEBD6881E63C2520057BE4D /* CCPUser.m */,
 				7ECEDE261E5FCDDF006003EC /* Main.storyboard */,
 				7ECEDE291E5FCDDF006003EC /* Assets.xcassets */,
 				7ECEDE2B1E5FCDDF006003EC /* LaunchScreen.storyboard */,
@@ -226,7 +236,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EEBD6861E63BE680057BE4D /* CCPRealm.m in Sources */,
 				7ECEDE251E5FCDDF006003EC /* ViewController.m in Sources */,
+				7EEBD6891E63C2520057BE4D /* CCPUser.m in Sources */,
 				7ECEDE221E5FCDDF006003EC /* AppDelegate.m in Sources */,
 				7ECEDE1F1E5FCDDF006003EC /* main.m in Sources */,
 			);
@@ -387,6 +399,7 @@
 				7ECEDE331E5FCDDF006003EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

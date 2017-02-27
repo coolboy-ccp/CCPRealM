@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "Realm.h"
+#import "CCPUser.h"
+#import "CCPRealm.h"
 
 @interface Dog : RLMObject
 @property NSString *name;
@@ -50,13 +52,26 @@ RLM_ARRAY_TYPE(Dog);
         [[RLMRealm defaultRealm] addObject:dog];
         NSLog(@"result2:%@",result);
     }];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self postModel];
 }
 
 
+- (void)postModel {
+    CCPRealm *post = [[CCPRealm alloc] initWithValue:@{@"title" : @"test"}];
+    post.mainKey = @"ccppost";
+    CCPUser *user = [[CCPUser alloc] init];
+    user.nickName = @"Cool ccp";
+    RLMRealm *r = [RLMRealm defaultRealm];
+    post.author = user;
+    [r transactionWithBlock:^{
+        [r addObject:post];
+        [r addObject:user];
+        NSLog(@"author----%@",user.posts);
+    }];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
